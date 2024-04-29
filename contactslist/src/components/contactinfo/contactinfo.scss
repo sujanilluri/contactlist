@@ -1,0 +1,53 @@
+.contact-info {
+  flex: 70% 0 0;
+  padding: 2%;
+  text-align: left;
+
+  .contact-name {
+    font-size: 48px;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 22px;
+
+    p {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 12px;
+      justify-content: space-between;
+      margin-top: 0px;
+
+      span:first-child {
+        flex: 27% 0 0;
+        text-align: right;
+        color: #9e9e9e;
+      }
+
+      span:last-child {
+        flex: 70% 0 0;
+        color: #000;
+      }
+      &:last-child {
+        border-bottom: 0px;
+      }
+    }
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button {
+      background: none;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 2px 22px;
+      font-size: 22px;
+    }
+  }
+}
